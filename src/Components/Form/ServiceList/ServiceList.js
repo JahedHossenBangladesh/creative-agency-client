@@ -11,7 +11,7 @@ const ServiceList = () => {
  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
  console.log(loggedInUser)
 
-useEffect(() => {   fetch('http://localhost:5000/selectedOrder?email='+loggedInUser.email)
+useEffect(() => {   fetch('https://gentle-hollows-02853.herokuapp.com/selectedOrder?email='+loggedInUser.email)
 .then(res=> res.json())
 .then(data=> {
     setSelectedOrder(data)
@@ -21,7 +21,7 @@ useEffect(() => {   fetch('http://localhost:5000/selectedOrder?email='+loggedInU
 
 
     // useEffect(() => {
-    //     fetch('http://localhost:5000/selectedOrder?email='+loggedInUser.email,{
+    //     fetch('https://gentle-hollows-02853.herokuapp.com/selectedOrder?email='+loggedInUser.email,{
     //         method:'GET',
     //         headers:{
     //             'Content-Type': 'application/js',

@@ -8,7 +8,7 @@ import orderlist from '../orderlist/Orderlist';
 const Admin = () => {
 const [selectedOrder,setSelectedOrder] = useState([])
 
-    useEffect(() => {   fetch('http://localhost:5000/allOrder')
+    useEffect(() => {   fetch('https://gentle-hollows-02853.herokuapp.com/allOrder')
 .then(res=> res.json())
 .then(data=> {
     setSelectedOrder(data)

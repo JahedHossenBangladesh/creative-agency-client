@@ -16,7 +16,7 @@ const Form = () => {
      dataa.text =text;
     
         // const newEvent ={...loggedInUser,name,text}
-        fetch('http://localhost:5000/addOrder',{
+        fetch('https://gentle-hollows-02853.herokuapp.com/addOrder',{
           method:'POST',
           headers:{'Content-Type':'application/json'},
           body:JSON.stringify(dataa)

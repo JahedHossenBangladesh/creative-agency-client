@@ -24,7 +24,7 @@ const feedback=[
 const Feedback = () => {
 const [feedback,setFeedback] = useState([]);
 useEffect(() =>{ 
-    fetch('http://localhost:5000/getcomment')
+    fetch('https://gentle-hollows-02853.herokuapp.com/getcomment')
     .then(res => res.json())
     .then(data => setFeedback(data))
 },[])

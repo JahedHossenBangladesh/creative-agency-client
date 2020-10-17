@@ -12,7 +12,7 @@ const Review = () => {
 
    
        const newComment ={...loggedInUser,dataa}
-       fetch('http://localhost:5000/comment',{
+       fetch('https://gentle-hollows-02853.herokuapp.com/comment',{
          method:'POST',
          headers:{'Content-Type':'application/json'},
          body:JSON.stringify(newComment)
