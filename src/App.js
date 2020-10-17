@@ -1,25 +1,61 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { createContext } from 'react';
+
 import './App.css';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './Components/Home/Home/Home';
+import { useState } from 'react';
+import Login from './Components/Login/Login/Login';
+import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute'
+import Form from './Components/Form/Form/Form';
+
+import Review from './Components/Form/Review/Review';
+import ServiceList from './Components/Form/ServiceList/ServiceList';
+import Admin from './Components/Adimin/Admin/Admin';
+import AddServic from './Components/Adimin/AddService/AddServic';
+
+
+
+
+export const UserContext = createContext()
+
 function App() {
+  const [loggedInUser,setLoggedInUser]= useState({});
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
+    <Router>
+      <Switch>
+      <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/service">
+         <ServiceList></ServiceList>
+          </Route>
+          <Route path="/admin">
+         <Admin></Admin>
+          </Route>
+          <Route path="/addService">
+        <AddServic></AddServic>
+          </Route>
+          <Route path="/review">
+         <Review></Review>
+          </Route>
+          <Route path="/login">
+            <Login/>
+          </Route>
+          <PrivateRoute path="/forms/:name/:text">
+            <Form></Form>
+          
+          </PrivateRoute>
+
+      </Switch>
+    </Router>
+    </UserContext.Provider>
   );
 }
 
