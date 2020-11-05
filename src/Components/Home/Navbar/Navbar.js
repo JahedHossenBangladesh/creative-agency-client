@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarResponsive">
       <ul className="navbar-nav ml-auto">
         <li className="nav-item active p-3">
-          <a className="nav-link text-dark active" style={{borderBottom:"2px solid red"}} href="#">Home
+          <a className="nav-link text-dark active hoverColor" href="#">Home
                 <span className="sr-only">(current)</span>
               </a>
               {/* <Link to="/home" className="nav-link mr-5 active">Home</Link> */}
@@ -28,22 +28,22 @@ const Navbar = () => {
 } */}
         </li>
         <li className="nav-item p-3">
-          <a className="nav-link text-dark" href="#">About</a>
+          <a className="nav-link text-dark hoverColor" href="#">About</a>
         </li>
         <li className="nav-item p-3">
-          <a className="nav-link text-dark" href="#">Services</a>
+          <a className="nav-link text-dark hoverColor " href="#">Services</a>
         </li>
         <li className="nav-item p-3">
-          <a className="nav-link text-dark " href="#">Contact</a>
+          <a className="nav-link text-dark hoverColor" href="#">Contact</a>
         </li>
         <li className="nav-item p-3">
-          <a className="nav-link text-dark " href="#"> <Link to='/admin'>Admin</Link>   </a>
+          <a className="nav-link text-dark hoverColor" href="#"> <Link to='/admin'>Admin</Link>   </a>
         </li>
         <li className="nav-item p-3">
-          <a className="nav-link text-dark " href="#"> <button onClick={() => setLoggedInUser({})}>Sign out</button></a>
+          <a className="nav-link text-dark hoverColor" href="#"> <button onClick={() => setLoggedInUser({})} style={{border:"none",backgroundColor:"golden"}}>Sign out</button></a>
         </li>
         <li className="nav-item p-3">
-          <a className="nav-link text-dark " href="#"> <Link to='/login'>Login</Link>   </a>
+          <a className="nav-link text-dark hoverColor" href="#"> <Link to='/login'>Login</Link>   </a>
         </li>
       
       </ul>
