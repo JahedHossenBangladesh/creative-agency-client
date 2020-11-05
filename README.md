@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+website name:-[Link of the website](https://creative-agency-7bba6.web.app/).
+##Features
+Customers can add and remove selected services.        
+Customer specific dashboard to control orders and provide feedback.         
+Firebase Authentication for customers.         
+Admin dashboard to control the orders, services and new admin access.          
+Customer’s information stored to the database for future Use. 
 
 ## Available Scripts
 
