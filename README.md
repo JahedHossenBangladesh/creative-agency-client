@@ -4,19 +4,19 @@ website name:-[Link of the website](https://creative-agency-7bba6.web.app/).
 # Features
 
 
-Customers can add and remove selected services.   
+..* Customers can add and remove selected services.   
 
 
-Customer specific dashboard to control orders and provide feedback.    
+..* Customer specific dashboard to control orders and provide feedback.    
 
 
-Firebase Authentication for customers.      
+..* Firebase Authentication for customers.      
 
 
-Admin dashboard to control the orders, services and new admin access.   
+..* Admin dashboard to control the orders, services and new admin access.   
 
 
-Customer’s information stored to the database for future Use. 
+..* Customer’s information stored to the database for future Use. 
 
 ## It is look Like
 ![project1](https://user-images.githubusercontent.com/67328056/98280449-9db78300-1fc5-11eb-9c40-488ad664c83f.PNG)
