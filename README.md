@@ -18,7 +18,7 @@ Admin dashboard to control the orders, services and new admin access. 
 
 Customer’s information stored to the database for future Use. 
 
-##It is look Like
+## It is look Like
 ![project1](https://user-images.githubusercontent.com/67328056/98280449-9db78300-1fc5-11eb-9c40-488ad664c83f.PNG)
 
 
